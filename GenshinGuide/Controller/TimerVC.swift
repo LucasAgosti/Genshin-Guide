@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import UserNotifications
 
 class TimerVC: UIViewController {
     
@@ -26,18 +27,12 @@ class TimerVC: UIViewController {
         super.viewDidLoad()
         
         safeArea = view.layoutMarginsGuide
-
         infoButton = UIBarButtonItem(image: infoImage, style: UIBarButtonItem.Style.plain, target: self, action: #selector(pushAddController))
         setupNavController()
-
-//        setupViews()
         setupTitleLabel()
         setupTimerTextField()
         setupTimerButton()
-    }
-    
-    @objc func pushAddController() {
-        self.present(InfoVC(), animated: true)
+        
     }
     
     func setupNavController() {
@@ -108,5 +103,9 @@ class TimerVC: UIViewController {
         } else {
             print("Input diferente de inteiro")
         }
+    }
+    
+    @objc func pushAddController() {
+        self.present(InfoVC(), animated: true)
     }
 }
