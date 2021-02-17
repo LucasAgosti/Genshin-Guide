@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import UserNotifications
 
 class TimerAnimationVC: UIViewController {
 
@@ -15,8 +16,10 @@ class TimerAnimationVC: UIViewController {
     let cancelButton = UIButton()
     
     static var resin: Int!
+    let maxResin = 160
     var seconds = 0
     var timer = Timer()
+    
     
     private var label: UILabel {
         let label = UILabel()
@@ -33,7 +36,6 @@ class TimerAnimationVC: UIViewController {
         button.titleLabel?.font = UIFont(name: "Verdana", size: 18)
         button.layer.cornerRadius = 10
         button.addTarget(self, action: #selector(didTapCancelButton), for: .touchUpInside)
-        
         return button
     }()
     
@@ -62,8 +64,8 @@ class TimerAnimationVC: UIViewController {
         timer.invalidate()
         timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(timerClass), userInfo: nil , repeats: true)
         
+        setupNotifications()
         setupTimerLabel()
-//        setupAnimation()
         animateCircle()
         setupCancelButton()
     }
@@ -93,7 +95,6 @@ class TimerAnimationVC: UIViewController {
                                       startAngle: -(.pi / 2),
                                       endAngle: .pi * 2,
                                       clockwise: true)
-        
         let trackShape = CAShapeLayer()
         
         trackShape.path = circlePath.cgPath
@@ -144,7 +145,27 @@ class TimerAnimationVC: UIViewController {
     }
     
     func resinToSecond(resin: Int) -> Int {
-         return (160 - resin) * 8 * 60
+         return (maxResin - resin) * 8 * 60
+    }
+    
+    func setupNotifications() {
+        let center = UNUserNotificationCenter.current()
+        
+        let content = UNMutableNotificationContent()
+        content.title = "Genshin Guide"
+        content.body = "Your resin is full! Login and start playing again!"
+        content.sound = .default
+        
+        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: Double(resinToSecond(resin: TimerAnimationVC.resin)), repeats: false)
+        
+        let uuidString = UUID().uuidString
+        let request = UNNotificationRequest(identifier: uuidString, content: content, trigger: trigger)
+        
+        center.add(request) { (error) in
+            if error != nil {
+                print("Error = \(error?.localizedDescription ?? "error local notification")")
+            }
+        }
     }
     
     @objc func didTapCancelButton() {
@@ -177,14 +198,9 @@ class TimerAnimationVC: UIViewController {
         }
         timerLabel.text = "Current Resin: " + String(TimerAnimationVC.resin)
             
-        if(TimerAnimationVC.resin == 160) {
+        if(TimerAnimationVC.resin == maxResin) {
             print("Resina esta cheia")
             timer.invalidate()
-            
-            // Send Notification logic
-//            DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + .seconds(5)) {
-//                NotificationCenter.default.post(someNotification)
-//            }
         }
     }
 }
