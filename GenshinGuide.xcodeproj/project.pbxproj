@@ -1,0 +1,695 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FF58878225D4734600B323AA /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF58878125D4734600B323AA /* Colors.swift */; };
+		FF58878A25D4A42700B323AA /* DetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF58878925D4A42700B323AA /* DetailsVC.swift */; };
+		FF58879525D4A6A800B323AA /* DetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF58879425D4A6A800B323AA /* DetailsView.swift */; };
+		FF716E3225D41D2500B33254 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF716E3125D41D2500B33254 /* AppDelegate.swift */; };
+		FF716E3425D41D2500B33254 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF716E3325D41D2500B33254 /* SceneDelegate.swift */; };
+		FF716E3C25D41D2500B33254 /* GenshinGuide.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FF716E3A25D41D2500B33254 /* GenshinGuide.xcdatamodeld */; };
+		FF716E3E25D41D2600B33254 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF716E3D25D41D2600B33254 /* Assets.xcassets */; };
+		FF716E4125D41D2600B33254 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF716E3F25D41D2600B33254 /* LaunchScreen.storyboard */; };
+		FF716E4C25D41D2600B33254 /* GenshinGuideTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF716E4B25D41D2600B33254 /* GenshinGuideTests.swift */; };
+		FF716E5725D41D2600B33254 /* GenshinGuideUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF716E5625D41D2600B33254 /* GenshinGuideUITests.swift */; };
+		FF716E7225D41D9000B33254 /* GenshinAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF716E7125D41D9000B33254 /* GenshinAPI.swift */; };
+		FF716E7B25D41DB700B33254 /* CharCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF716E7A25D41DB700B33254 /* CharCell.swift */; };
+		FF716E8325D41DCE00B33254 /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF716E8225D41DCE00B33254 /* TimerView.swift */; };
+		FF716E8825D41DE800B33254 /* DataVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF716E8725D41DE800B33254 /* DataVC.swift */; };
+		FF716E8D25D41DFB00B33254 /* CharVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF716E8C25D41DFB00B33254 /* CharVC.swift */; };
+		FF716E9225D41E0E00B33254 /* TimerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF716E9125D41E0E00B33254 /* TimerVC.swift */; };
+		FF716E9725D41E2200B33254 /* TabBarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF716E9625D41E2200B33254 /* TabBarVC.swift */; };
+		FF716E9C25D41FC700B33254 /* 120.png in Resources */ = {isa = PBXBuildFile; fileRef = FF716E9B25D41FC700B33254 /* 120.png */; };
+		FF7CF9A825D6EEF00004B783 /* TimerAnimationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7CF9A725D6EEF00004B783 /* TimerAnimationVC.swift */; };
+		FFAD5D9225D75D2800DC2BFB /* InfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFAD5D9125D75D2800DC2BFB /* InfoVC.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FF716E4825D41D2600B33254 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF716E2625D41D2500B33254 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FF716E2D25D41D2500B33254;
+			remoteInfo = GenshinGuide;
+		};
+		FF716E5325D41D2600B33254 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF716E2625D41D2500B33254 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FF716E2D25D41D2500B33254;
+			remoteInfo = GenshinGuide;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FF58878125D4734600B323AA /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		FF58878925D4A42700B323AA /* DetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsVC.swift; sourceTree = "<group>"; };
+		FF58879425D4A6A800B323AA /* DetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsView.swift; sourceTree = "<group>"; };
+		FF716E2E25D41D2500B33254 /* GenshinGuide.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GenshinGuide.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF716E3125D41D2500B33254 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FF716E3325D41D2500B33254 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		FF716E3B25D41D2500B33254 /* GenshinGuide.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = GenshinGuide.xcdatamodel; sourceTree = "<group>"; };
+		FF716E3D25D41D2600B33254 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FF716E4025D41D2600B33254 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FF716E4225D41D2600B33254 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF716E4725D41D2600B33254 /* GenshinGuideTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GenshinGuideTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF716E4B25D41D2600B33254 /* GenshinGuideTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenshinGuideTests.swift; sourceTree = "<group>"; };
+		FF716E4D25D41D2600B33254 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF716E5225D41D2600B33254 /* GenshinGuideUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GenshinGuideUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF716E5625D41D2600B33254 /* GenshinGuideUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenshinGuideUITests.swift; sourceTree = "<group>"; };
+		FF716E5825D41D2600B33254 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF716E7125D41D9000B33254 /* GenshinAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenshinAPI.swift; sourceTree = "<group>"; };
+		FF716E7A25D41DB700B33254 /* CharCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharCell.swift; sourceTree = "<group>"; };
+		FF716E8225D41DCE00B33254 /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
+		FF716E8725D41DE800B33254 /* DataVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataVC.swift; sourceTree = "<group>"; };
+		FF716E8C25D41DFB00B33254 /* CharVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharVC.swift; sourceTree = "<group>"; };
+		FF716E9125D41E0E00B33254 /* TimerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerVC.swift; sourceTree = "<group>"; };
+		FF716E9625D41E2200B33254 /* TabBarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarVC.swift; sourceTree = "<group>"; };
+		FF716E9B25D41FC700B33254 /* 120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 120.png; sourceTree = "<group>"; };
+		FF7CF9A725D6EEF00004B783 /* TimerAnimationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerAnimationVC.swift; sourceTree = "<group>"; };
+		FFAD5D9125D75D2800DC2BFB /* InfoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoVC.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FF716E2B25D41D2500B33254 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF716E4425D41D2600B33254 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF716E4F25D41D2600B33254 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FF58878025D4733A00B323AA /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				FF58878125D4734600B323AA /* Colors.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		FF716E2525D41D2500B33254 = {
+			isa = PBXGroup;
+			children = (
+				FF716E3025D41D2500B33254 /* GenshinGuide */,
+				FF716E4A25D41D2600B33254 /* GenshinGuideTests */,
+				FF716E5525D41D2600B33254 /* GenshinGuideUITests */,
+				FF716E2F25D41D2500B33254 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FF716E2F25D41D2500B33254 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FF716E2E25D41D2500B33254 /* GenshinGuide.app */,
+				FF716E4725D41D2600B33254 /* GenshinGuideTests.xctest */,
+				FF716E5225D41D2600B33254 /* GenshinGuideUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FF716E3025D41D2500B33254 /* GenshinGuide */ = {
+			isa = PBXGroup;
+			children = (
+				FF58878025D4733A00B323AA /* Extensions */,
+				FF716E6D25D41D5600B33254 /* Network */,
+				FF716E7025D41D6900B33254 /* Model */,
+				FF716E6F25D41D6500B33254 /* View */,
+				FF716E6E25D41D5D00B33254 /* Controller */,
+				FF716E3125D41D2500B33254 /* AppDelegate.swift */,
+				FF716E3325D41D2500B33254 /* SceneDelegate.swift */,
+				FF716E3D25D41D2600B33254 /* Assets.xcassets */,
+				FF716E9B25D41FC700B33254 /* 120.png */,
+				FF716E3F25D41D2600B33254 /* LaunchScreen.storyboard */,
+				FF716E4225D41D2600B33254 /* Info.plist */,
+				FF716E3A25D41D2500B33254 /* GenshinGuide.xcdatamodeld */,
+			);
+			path = GenshinGuide;
+			sourceTree = "<group>";
+		};
+		FF716E4A25D41D2600B33254 /* GenshinGuideTests */ = {
+			isa = PBXGroup;
+			children = (
+				FF716E4B25D41D2600B33254 /* GenshinGuideTests.swift */,
+				FF716E4D25D41D2600B33254 /* Info.plist */,
+			);
+			path = GenshinGuideTests;
+			sourceTree = "<group>";
+		};
+		FF716E5525D41D2600B33254 /* GenshinGuideUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FF716E5625D41D2600B33254 /* GenshinGuideUITests.swift */,
+				FF716E5825D41D2600B33254 /* Info.plist */,
+			);
+			path = GenshinGuideUITests;
+			sourceTree = "<group>";
+		};
+		FF716E6D25D41D5600B33254 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				FF716E7125D41D9000B33254 /* GenshinAPI.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		FF716E6E25D41D5D00B33254 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FF716E9625D41E2200B33254 /* TabBarVC.swift */,
+				FF716E8725D41DE800B33254 /* DataVC.swift */,
+				FF716E8C25D41DFB00B33254 /* CharVC.swift */,
+				FF58878925D4A42700B323AA /* DetailsVC.swift */,
+				FF716E9125D41E0E00B33254 /* TimerVC.swift */,
+				FF7CF9A725D6EEF00004B783 /* TimerAnimationVC.swift */,
+				FFAD5D9125D75D2800DC2BFB /* InfoVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		FF716E6F25D41D6500B33254 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FF716E7A25D41DB700B33254 /* CharCell.swift */,
+				FF716E8225D41DCE00B33254 /* TimerView.swift */,
+				FF58879425D4A6A800B323AA /* DetailsView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FF716E7025D41D6900B33254 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FF716E2D25D41D2500B33254 /* GenshinGuide */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF716E5B25D41D2600B33254 /* Build configuration list for PBXNativeTarget "GenshinGuide" */;
+			buildPhases = (
+				FF716E2A25D41D2500B33254 /* Sources */,
+				FF716E2B25D41D2500B33254 /* Frameworks */,
+				FF716E2C25D41D2500B33254 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GenshinGuide;
+			productName = GenshinGuide;
+			productReference = FF716E2E25D41D2500B33254 /* GenshinGuide.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FF716E4625D41D2600B33254 /* GenshinGuideTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF716E5E25D41D2600B33254 /* Build configuration list for PBXNativeTarget "GenshinGuideTests" */;
+			buildPhases = (
+				FF716E4325D41D2600B33254 /* Sources */,
+				FF716E4425D41D2600B33254 /* Frameworks */,
+				FF716E4525D41D2600B33254 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FF716E4925D41D2600B33254 /* PBXTargetDependency */,
+			);
+			name = GenshinGuideTests;
+			productName = GenshinGuideTests;
+			productReference = FF716E4725D41D2600B33254 /* GenshinGuideTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FF716E5125D41D2600B33254 /* GenshinGuideUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF716E6125D41D2600B33254 /* Build configuration list for PBXNativeTarget "GenshinGuideUITests" */;
+			buildPhases = (
+				FF716E4E25D41D2600B33254 /* Sources */,
+				FF716E4F25D41D2600B33254 /* Frameworks */,
+				FF716E5025D41D2600B33254 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FF716E5425D41D2600B33254 /* PBXTargetDependency */,
+			);
+			name = GenshinGuideUITests;
+			productName = GenshinGuideUITests;
+			productReference = FF716E5225D41D2600B33254 /* GenshinGuideUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FF716E2625D41D2500B33254 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					FF716E2D25D41D2500B33254 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					FF716E4625D41D2600B33254 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = FF716E2D25D41D2500B33254;
+					};
+					FF716E5125D41D2600B33254 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = FF716E2D25D41D2500B33254;
+					};
+				};
+			};
+			buildConfigurationList = FF716E2925D41D2500B33254 /* Build configuration list for PBXProject "GenshinGuide" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FF716E2525D41D2500B33254;
+			productRefGroup = FF716E2F25D41D2500B33254 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FF716E2D25D41D2500B33254 /* GenshinGuide */,
+				FF716E4625D41D2600B33254 /* GenshinGuideTests */,
+				FF716E5125D41D2600B33254 /* GenshinGuideUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FF716E2C25D41D2500B33254 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF716E9C25D41FC700B33254 /* 120.png in Resources */,
+				FF716E4125D41D2600B33254 /* LaunchScreen.storyboard in Resources */,
+				FF716E3E25D41D2600B33254 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF716E4525D41D2600B33254 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF716E5025D41D2600B33254 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FF716E2A25D41D2500B33254 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF716E8825D41DE800B33254 /* DataVC.swift in Sources */,
+				FF58878A25D4A42700B323AA /* DetailsVC.swift in Sources */,
+				FF58878225D4734600B323AA /* Colors.swift in Sources */,
+				FF716E8325D41DCE00B33254 /* TimerView.swift in Sources */,
+				FFAD5D9225D75D2800DC2BFB /* InfoVC.swift in Sources */,
+				FF716E9725D41E2200B33254 /* TabBarVC.swift in Sources */,
+				FF7CF9A825D6EEF00004B783 /* TimerAnimationVC.swift in Sources */,
+				FF716E3225D41D2500B33254 /* AppDelegate.swift in Sources */,
+				FF58879525D4A6A800B323AA /* DetailsView.swift in Sources */,
+				FF716E7225D41D9000B33254 /* GenshinAPI.swift in Sources */,
+				FF716E9225D41E0E00B33254 /* TimerVC.swift in Sources */,
+				FF716E3425D41D2500B33254 /* SceneDelegate.swift in Sources */,
+				FF716E3C25D41D2500B33254 /* GenshinGuide.xcdatamodeld in Sources */,
+				FF716E8D25D41DFB00B33254 /* CharVC.swift in Sources */,
+				FF716E7B25D41DB700B33254 /* CharCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF716E4325D41D2600B33254 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF716E4C25D41D2600B33254 /* GenshinGuideTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF716E4E25D41D2600B33254 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF716E5725D41D2600B33254 /* GenshinGuideUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FF716E4925D41D2600B33254 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FF716E2D25D41D2500B33254 /* GenshinGuide */;
+			targetProxy = FF716E4825D41D2600B33254 /* PBXContainerItemProxy */;
+		};
+		FF716E5425D41D2600B33254 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FF716E2D25D41D2500B33254 /* GenshinGuide */;
+			targetProxy = FF716E5325D41D2600B33254 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FF716E3F25D41D2600B33254 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FF716E4025D41D2600B33254 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FF716E5925D41D2600B33254 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FF716E5A25D41D2600B33254 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FF716E5C25D41D2600B33254 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1.1;
+				DEVELOPMENT_TEAM = M7W2WQWYYB;
+				INFOPLIST_FILE = GenshinGuide/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = lucasagosTI.ifce.GenshinGuide;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		FF716E5D25D41D2600B33254 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1.1;
+				DEVELOPMENT_TEAM = M7W2WQWYYB;
+				INFOPLIST_FILE = GenshinGuide/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = lucasagosTI.ifce.GenshinGuide;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		FF716E5F25D41D2600B33254 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = M7W2WQWYYB;
+				INFOPLIST_FILE = GenshinGuideTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = lucasagosTI.ifce.GenshinGuideTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GenshinGuide.app/GenshinGuide";
+			};
+			name = Debug;
+		};
+		FF716E6025D41D2600B33254 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = M7W2WQWYYB;
+				INFOPLIST_FILE = GenshinGuideTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = lucasagosTI.ifce.GenshinGuideTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GenshinGuide.app/GenshinGuide";
+			};
+			name = Release;
+		};
+		FF716E6225D41D2600B33254 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = M7W2WQWYYB;
+				INFOPLIST_FILE = GenshinGuideUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = lucasagosTI.ifce.GenshinGuideUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GenshinGuide;
+			};
+			name = Debug;
+		};
+		FF716E6325D41D2600B33254 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = M7W2WQWYYB;
+				INFOPLIST_FILE = GenshinGuideUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = lucasagosTI.ifce.GenshinGuideUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GenshinGuide;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FF716E2925D41D2500B33254 /* Build configuration list for PBXProject "GenshinGuide" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF716E5925D41D2600B33254 /* Debug */,
+				FF716E5A25D41D2600B33254 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF716E5B25D41D2600B33254 /* Build configuration list for PBXNativeTarget "GenshinGuide" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF716E5C25D41D2600B33254 /* Debug */,
+				FF716E5D25D41D2600B33254 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF716E5E25D41D2600B33254 /* Build configuration list for PBXNativeTarget "GenshinGuideTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF716E5F25D41D2600B33254 /* Debug */,
+				FF716E6025D41D2600B33254 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF716E6125D41D2600B33254 /* Build configuration list for PBXNativeTarget "GenshinGuideUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF716E6225D41D2600B33254 /* Debug */,
+				FF716E6325D41D2600B33254 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		FF716E3A25D41D2500B33254 /* GenshinGuide.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				FF716E3B25D41D2500B33254 /* GenshinGuide.xcdatamodel */,
+			);
+			currentVersion = FF716E3B25D41D2500B33254 /* GenshinGuide.xcdatamodel */;
+			path = GenshinGuide.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = FF716E2625D41D2500B33254 /* Project object */;
+}
